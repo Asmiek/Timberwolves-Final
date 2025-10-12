@@ -1,0 +1,197 @@
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #0c1a2a, #1e3a5f);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* ======== CABEÇALHO ======== */
+.cabecalho {
+  position: relative; /* fixa no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 20, 40, 0.95);
+  border-bottom: 2px solid #0072ce;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 25px;
+}
+
+/* Botões do menu */
+.menu button {
+  background: #00aaff;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.menu button:hover {
+  background: #0090e0;
+  transform: scale(1.05);
+}
+
+/* Logo e título centralizados */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  height: 80px;
+  filter: drop-shadow(0 0 10px #00bfff);
+}
+
+.logo-container h1 {
+  color: #00bfff;
+  font-size: 1.2em;
+  margin-top: 5px;
+  font-weight: 600;
+  text-shadow: 0 0 8px #0077ff;
+}
+
+
+.icone-menu {
+  font-size: 1.8em;
+  color: #00aaff;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.icone-menu:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgba(0, 20, 40, 0.7);
+}
+
+h1 {
+  font-size: 2.8em;
+  color: #00b3ff;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #bcd0e8;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  color: #00aaff;
+  margin-bottom: 30px;
+}
+
+.jogadores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-items: center;
+}
+
+.jogador {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  max-width: 250px;
+}
+
+.jogador img {
+  width: 100%;
+  border-radius: 15px;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.descricao-jogador {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 50, 0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 15px;
+  transition: opacity 0.4s ease;
+  padding: 15px;
+  z-index: 2;
+}
+
+.descricao-jogador h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.3em;
+  color: #00bfff;
+}
+
+.bloco-lobo {
+  position: relative;       /* relativo para o lobo se posicionar dentro */
+  height: 100px;            /* altura do bloco, ajustável */
+  display: flex;
+  align-items: center;      /* centraliza verticalmente */
+  justify-content: flex-start; /* começa à esquerda */
+  background: rgba(0,0,0,0.2); /* opcional: só pra ver o bloco */
+  margin: 50px 0;           /* espaço acima e abaixo */
+}
+
+.Lobobolado {
+  position: absolute; /* relativo ao bloco-lobo agora */
+  left: 20px;         /* posição inicial à esquerda do bloco */
+  width: 250px;
+  cursor: pointer;
+  transition: transform 0.5s ease, left 0.5s ease, filter 0.5s ease;
+}
+
+.Lobobolado.transformando {
+  filter: brightness(2) saturate(2);
+  transform: scale(1.2) rotate(5deg);
+}
+
+.Lobobolado.evoluido {
+  cursor: default;
+  left: auto;
+  right: 20px; /* posição fixa à direita do bloco */
+  transform: translateX(0) scale(1);
+  filter: none;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 20, 40, 0.9);
+  font-size: 0.9em;
+  color: #ccc;
+}

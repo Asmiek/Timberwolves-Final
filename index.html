@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minnesota Timberwolves - Elenco</title>
+  <link rel="stylesheet" href="style.css">
+ <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- ======== CABEÇALHO ======== -->
+  <header class="cabecalho">
+    <nav class="menu">
+      <button onclick="document.getElementById('atual').scrollIntoView({ behavior: 'smooth' });">
+        Escalação Atual
+      </button>
+
+      <div class="logo-container">
+        <img src="imagens/Minnesota escudo .png" alt="Logo Timberwolves" class="logo">
+        <h1>Minnesota Timberwolves</h1>
+      </div>
+
+      <button onclick="document.getElementById('historico').scrollIntoView({ behavior: 'smooth' });">
+        Escalação Intertemporal
+      </button>
+    </nav>  
+  </header>
+
+  <!-- ======== CONTEÚDO PRINCIPAL ======== -->
+  <main>
+    <!-- Seção Atual -->
+    <section id="atual" class="elenco-atual">
+      <h2>🏀 Escalação Atual</h2>
+      <div class="jogadores-grid">
+
+        <div class="jogador" data-nome="Anthony Edwards" data-descricao="O mlk é EMBAÇADO">
+          <img src="imagens/Anthony Edwards.jpg" alt="Anthony Edwards">
+        </div>
+
+        <div class="jogador" data-nome="Julius Randle" data-descricao="Não pense que pode pará-lo">
+          <img src="imagens/Julius Randle.jpg" alt="Julius Randle">
+        </div>
+
+        <div class="jogador" data-nome="Rudy Gobert" data-descricao="Só o DPOY 4 vezes">
+          <img src="imagens/Rudy Gobert.jpg" alt="Rudy Gobert">
+        </div>
+
+        <div class="jogador" data-nome="Alexander-Walker" data-descricao="Deixe-o livre e veja a mágica">
+          <img src="imagens/NAW.jpg" alt="Nickeil Alexander-Walker">
+        </div>
+
+        <div class="jogador" data-nome="Rob Dillingham" data-descricao="Gelado como uma montanha">
+          <img src="imagens/Rob Dillingham.jpg" alt="Rob Dillingham">
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Seção Intertemporal -->
+    <section id="historico" class="elenco-historico">
+      <h2>⏳ Escalação Intertemporal</h2>
+      <div class="jogadores-grid">
+
+        <div class="jogador" data-nome="Kevin Garnett" data-descricao="GOAT do Wolves">
+          <img src="imagens/Kevin Garnett.jpg" alt="Kevin Garnett">
+        </div>
+
+        <div class="jogador" data-nome="Anthony Edwards" data-descricao="Futuro GOAT da NBA">
+          <img src="imagens/Anthony Edwards.jpg" alt="Anthony Edwards">
+        </div>
+
+        <div class="jogador" data-nome="Karl-Anthony Towns" data-descricao="Miss you KAT">
+          <img src="imagens/KAT.jpg" alt="Karl-Anthony Towns">
+        </div>
+
+        <div class="jogador" data-nome="Kevin Love" data-descricao="Marcou seu lugar">
+          <img src="imagens/Kevin love.jpg" alt="Kevin Love">
+        </div>
+
+        <div class="jogador" data-nome="Jimmy Butler" data-descricao="Marcado pelo vacilo">
+          <img src="imagens/Jimmy.jpg" alt="Jimmy Butler">
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+<section id="bloco-lobo" class="bloco-lobo">
+  <img id="lobo-bolado" class="Lobobolado" src="imagens/Lobão bolado.png" alt="Lobo travesso">
+</section>
+  <footer>
+    <p>Feito por <strong>Samuel Assis Inácio</strong> 🐺 | ©Todos os direitos Reservados | <strong>Lumnia</strong> </p>
+  </footer>
+5
+  <script src="bagulho.js"></script>
+</body>
+
